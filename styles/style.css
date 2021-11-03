@@ -1,0 +1,106 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.attribution a:hover {
+    color: hsl(31, 77%, 52%);
+  }
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  font-family: "Lexend Deca", sans-serif;
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsla(0, 0%, 100%, 0.75);
+  /*margin: 20vh 0 20vh 0;*/
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* OLD CODE - TESTING GIT EXAMPLE
+    display: flex;
+    Not sure if I need this yet 
+    flex-flow: row wrap;
+    justify-content: space-around;
+    */
+  padding: 0 20vm;
+  margin: 0 20vm;
+  width: 50%;
+}
+
+.item {
+  flex: 20%;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.first {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.second {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.third {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.btn-learn {
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 0;
+  height: 5vh;
+  width: 15vh;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/* Larger Screen */
+@media screen and (min-width: 711px) {
+  .first {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .second {
+    background-color: hsl(184, 100%, 22%);
+  }
+
+  .third {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+/* Smaller Screen */
+@media screen and (max-width: 710px) {
+  .container {
+    width: 80%;
+  }
+  .first {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .third {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
